@@ -9,6 +9,7 @@ Tests were performed in desktop Chromium through Playwright CLI. No physical pho
 - Validation of 84 GLBs and Blender source files, materials, expected animal animation tracks, reasonable transforms/mesh budgets, unique definitions, localization parity and all 140 narration files.
 - Clicked all five animals; both variants of all eight initial shapes; all six quantities; all five letters; all six xylophone bars, drum and bell; cloud; telescope; all six space bodies; and return home. The browser recorded 48 successful interactions in that pass, with no console errors.
 - Quantity assertions confirmed exactly 0–5 rendered quantity butterflies.
+- A dedicated 844×390 landscape check tapped all six quantities, the Sun, all five night stars, and the Moon. The sky layout keeps the cloud clear of the stars and the Sun/Moon in front of the tree line.
 - All five requested viewports and rotated counterparts: 360×800, 390×844, 412×915, 768×1024, 820×1180. No horizontal overflow; primary animal and sky targets within screen bounds; rabbit responded in every viewport.
 - Thirty-five rapid clicks, three simultaneous emulated touch points, and small accidental drag movements. Particle and narration queues stayed bounded.
 - Parent gate rejected a brief press and an incorrect answer, accepted a held leaf plus correct answer, and exposed settings only afterwards.
@@ -22,6 +23,7 @@ Run `npm run dev`, then:
 node node_modules/@playwright/cli/playwright-cli.js -s=elenita open 'http://localhost:5173/?debug=1' --headed
 node tools/run-browser-check.mjs tools/browser-smoke.js
 node tools/run-browser-check.mjs tools/browser-mobile.js
+node tools/run-browser-check.mjs tools/browser-sky.js
 node tools/run-browser-check.mjs tools/browser-settings.js
 ```
 

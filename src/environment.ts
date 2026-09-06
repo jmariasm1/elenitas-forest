@@ -175,7 +175,9 @@ export class EnvironmentSystem {
     moon.enabled = moon.object.visible;
     // Sun sets while the moon rises, preserving their separate silhouettes.
     sun.object.position.y = 4.3 - this.blend * 3;
-    moon.object.position.set(5, 2 + this.blend * 2.3, -8);
+    moon.object.position.set(5, 2 + this.blend * 2.3, -3);
+    // Leave a clear touchable silhouette around every night star.
+    this.world.find("cloud")!.object.position.y = 4.65 - this.blend * 1.6;
     this.world.entities
       .filter((e) => e.def.id.startsWith("sky_star"))
       .forEach((e) => {

@@ -74,6 +74,7 @@ npx tsc --noEmit
 node node_modules/@playwright/cli/playwright-cli.js -s=elenita open 'http://localhost:5173/?debug=1' --headed
 node tools/run-browser-check.mjs tools/browser-smoke.js
 node tools/run-browser-check.mjs tools/browser-mobile.js
+node tools/run-browser-check.mjs tools/browser-sky.js
 node tools/run-browser-check.mjs tools/browser-settings.js
 ```
 
