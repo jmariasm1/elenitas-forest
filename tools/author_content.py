@@ -55,7 +55,8 @@ for i,(id,es,en,c1,e1,h1,c2,e2,h2) in enumerate(shape_names):
 
 for i,(char,es,en,association) in enumerate([('A','A. Árbol.','A. Apple.','tree'),('E','E. Estrella.','E. Earth.','star'),('L','Ele. Luna.','L. Leaf.','moon'),('M','Eme. Mariposa.','M. Moon.','butterfly'),('S','Ese. Sol.','S. Sun.','sun')]):
     phrase('letter.'+char.lower(),es,en)
-    entity('letter_'+char.lower(),'letter','letter_'+char.lower(),'letters',[-4.4+i*2.2,.12,0 if i%2 else -1.4],'letter.'+char.lower(),color=['#d98473','#f0c96d','#79b5ce','#aa94bd','#91b663'][i],association=association,scale=1.3)
+    english_models={'A':'apple','E':'planet_earth','L':'leaf','M':'moon','S':'sun'}
+    entity('letter_'+char.lower(),'letter','letter_'+char.lower(),'letters',[-4.4+i*2.2,.12,0 if i%2 else -1.4],'letter.'+char.lower(),color=['#d98473','#f0c96d','#79b5ce','#aa94bd','#91b663'][i],association=association,associations={'es':association,'en':english_models[char]},scale=1.3)
 
 for i,(es,en) in enumerate(zip(['Cero','Uno','Dos','Tres','Cuatro','Cinco'],['Zero','One','Two','Three','Four','Five'])):
     phrase('number.'+str(i),es+'.',en+'.')

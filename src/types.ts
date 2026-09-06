@@ -25,6 +25,7 @@ export interface Definition {
   behavior?: string;
   value?: number;
   association?: string;
+  associations?: Record<Language, string>;
   note?: number;
 }
 export interface Entity {

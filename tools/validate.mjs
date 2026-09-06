@@ -20,6 +20,15 @@ for (const d of content.entities) {
   ensure(!ids.has(d.id), `Duplicate ${d.id}`);
   ids.add(d.id);
   file(resolve(root, "public/models", d.model + ".glb"));
+  if (d.kind === "letter")
+    for (const lang of ["es", "en"]) {
+      ensure(
+        typeof d.associations?.[lang] === "string",
+        `Missing letter association ${d.id} ${lang}`,
+      );
+      if (d.associations?.[lang])
+        file(resolve(root, "public/models", d.associations[lang] + ".glb"));
+    }
   ensure(
     content.places.some((p) => p.id === d.place),
     `Unknown place ${d.id}`,

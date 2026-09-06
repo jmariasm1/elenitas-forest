@@ -180,6 +180,10 @@
       "key": "letter.a",
       "color": "#d98473",
       "association": "tree",
+      "associations": {
+        "es": "tree",
+        "en": "apple"
+      },
       "scale": 1.3
     },
     {
@@ -191,6 +195,10 @@
       "key": "letter.e",
       "color": "#f0c96d",
       "association": "star",
+      "associations": {
+        "es": "star",
+        "en": "planet_earth"
+      },
       "scale": 1.3
     },
     {
@@ -202,6 +210,10 @@
       "key": "letter.l",
       "color": "#79b5ce",
       "association": "moon",
+      "associations": {
+        "es": "moon",
+        "en": "leaf"
+      },
       "scale": 1.3
     },
     {
@@ -213,6 +225,10 @@
       "key": "letter.m",
       "color": "#aa94bd",
       "association": "butterfly",
+      "associations": {
+        "es": "butterfly",
+        "en": "moon"
+      },
       "scale": 1.3
     },
     {
@@ -224,6 +240,10 @@
       "key": "letter.s",
       "color": "#91b663",
       "association": "sun",
+      "associations": {
+        "es": "sun",
+        "en": "sun"
+      },
       "scale": 1.3
     },
     {

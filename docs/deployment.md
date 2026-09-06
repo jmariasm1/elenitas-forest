@@ -40,4 +40,6 @@ Offline behavior requires HTTPS or localhost. A first visit with no network cann
 
 ## Verification
 
-Public deployment is pending final production verification. Do not infer completion from this configured URL alone.
+**Live and verified on September 6, 2026:** [El Bosque de Elenita](https://jmariasm1.github.io/elenitas-forest/).
+
+The GitHub Actions build/deploy completed successfully. HTTPS returned 200, the page initialized Three.js and its original GLB models, Spanish was the default, user interaction unlocked audio, all initial creature categories responded, the telescope reached space, and return home worked. The public browser smoke pass had zero console warnings/errors. Offline reload and deferred space loading also passed against the built HTTP release after cache installation. See [testing.md](testing.md) for exact scope and physical-device limitations.

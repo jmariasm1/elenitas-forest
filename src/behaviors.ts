@@ -49,7 +49,7 @@ export class Behaviors {
         if (d.id === "letter_s") {
           bus.emit("grow", undefined);
         }
-        if (d.id === "letter_l" && settings.value.language === "es") {
+        if (d.associations?.[settings.value.language] === "moon") {
           this.environment.setNight(true);
         }
         break;

@@ -1,6 +1,6 @@
 import * as T from "three";
 import { Assets } from "./assets";
-import { settings } from "./core";
+import { definitions, settings } from "./core";
 import { mesh } from "./graphics";
 type Particle = {
   object: T.Mesh;
@@ -35,7 +35,16 @@ export class Effects {
         direction: new T.Vector3(),
       });
     }
-    for (let i = 0; i < 5; i++) {
+    const capacity = Math.min(
+      20,
+      Math.max(
+        5,
+        ...definitions
+          .filter((d) => d.kind === "number")
+          .map((d) => d.value ?? 0),
+      ),
+    );
+    for (let i = 0; i < capacity; i++) {
       const b = assets.clone("butterfly");
       b.visible = false;
       b.scale.setScalar(0.35);
@@ -67,10 +76,13 @@ export class Effects {
     }
   }
   count(n: number, position: T.Vector3) {
-    this.quantity = n;
+    this.quantity = Math.min(
+      this.butterflies.length,
+      Math.max(0, Math.floor(n)),
+    );
     this.quantityTime = performance.now() / 1000;
     this.quantityBase.copy(position);
-    this.butterflies.forEach((b, i) => (b.visible = i < n));
+    this.butterflies.forEach((b, i) => (b.visible = i < this.quantity));
   }
   honey(position: T.Vector3) {
     this.honeyTime = performance.now() / 1000;
@@ -112,13 +124,16 @@ export class Effects {
         b.visible = false;
         return;
       }
-      const a = (i - (this.quantity - 1) / 2) * 0.9;
+      const columns = Math.min(5, this.quantity);
+      const row = Math.floor(i / 5);
+      const a = ((i % 5) - (columns - 1) / 2) * 0.9;
       b.position
         .copy(this.quantityBase)
         .add(
           new T.Vector3(
             a,
             1.8 +
+              row * 0.8 +
               (settings.value.reducedMotion
                 ? 0
                 : Math.sin(time * 2 + i) * 0.12),

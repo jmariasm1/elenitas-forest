@@ -1,5 +1,6 @@
 async (page) => {
   await page.setViewportSize({width:1280,height:800});
+  await page.waitForFunction(()=>window.__elenita?.state().ready);
   const failures = [];
   const check = (condition, message) => { if (!condition) failures.push(message); };
   const state = () => page.evaluate(() => window.__elenita.state());

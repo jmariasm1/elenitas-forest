@@ -33,4 +33,15 @@ Visual artifacts are generated under `output/playwright/` and are excluded from 
 
 Test actual Android Chrome and iPhone/iPad Safari, including audio volume, rotation, home-screen installation, background/resume and offline reload. Observe Elenita with an adult: whether she recognizes targets, notices their reactions, understands camera travel, and enjoys the pace. Do not collect analytics or optimize for session length.
 
-Production offline and public-URL verification are recorded below once performed.
+## Production verification — September 6, 2026
+
+The built HTTP site installed a complete service-worker cache (236 requests, including the HTML entry point). With networking disabled through Playwright, reload succeeded, the rabbit responded with local narration, the deferred space scene loaded, and Saturn responded. No page errors occurred. Reproduce with a fresh Spanish session on the built site:
+
+```powershell
+node node_modules/@playwright/cli/playwright-cli.js -s=production open 'http://localhost:4173/?debug=1' --headed
+node tools/run-browser-check.mjs tools/browser-offline.js production
+```
+
+The public HTTPS site returned 200 and the complete 48-interaction smoke sequence also passed there, including every initial creature category, space and return home. Its browser console contained no warnings or errors. The public address is [El Bosque de Elenita](https://jmariasm1.github.io/elenitas-forest/).
+
+Two attempts to simulate real OS backgrounding with Playwright's tab/focus APIs did not change `document.visibilityState`; they timed out. This is not counted as a passed background/resume test. The implementation uses the standard visibility event, but actual background/resume remains on the human device checklist above.

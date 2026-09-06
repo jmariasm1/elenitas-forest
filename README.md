@@ -6,7 +6,9 @@ A quiet, Spanish-first 3D forest made for Elenita. Touch an animal, a shape, a l
 
 ## Play
 
-Deployment target: **https://jmariasm1.github.io/elenitas-forest/**. Deployment verification is recorded in [docs/deployment.md](docs/deployment.md).
+**[Play El Bosque de Elenita](https://jmariasm1.github.io/elenitas-forest/)** · [Source repository](https://github.com/jmariasm1/elenitas-forest)
+
+The public HTTPS build has been verified. Deployment details are recorded in [docs/deployment.md](docs/deployment.md).
 
 Landscape works best. Portrait remains playable and offers a gentle rotation hint. Press the large play button to enable browser audio. Use the illustrated trail at the bottom, or the large mushrooms beside each clearing, to move through the connected forest. Touch the telescope to visit space; the forest button brings you home. The Sun and Moon change the time of day.
 

@@ -91,6 +91,7 @@ export class World {
       "leaf",
       "planet_earth",
       ...definitions.map((d) => d.model),
+      ...definitions.flatMap((d) => Object.values(d.associations ?? {})),
     ];
     await this.assets.preload(initial, progress);
     const ground = disk(65, "#a9bb86", -0.2);
@@ -313,14 +314,7 @@ export class World {
       const old = e.object.getObjectByName("association");
       if (old) e.object.remove(old);
       const es = e.def.association!;
-      const en: Record<string, string> = {
-        letter_a: "apple",
-        letter_e: "planet_earth",
-        letter_l: "leaf",
-        letter_m: "moon",
-        letter_s: "sun",
-      };
-      const id = settings.value.language === "es" ? es : en[e.def.id];
+      const id = e.def.associations?.[settings.value.language] ?? es;
       const companion = this.assets.clone(id);
       companion.name = "association";
       companion.position.set(0, 1.25, -0.45);
