@@ -1,0 +1,30 @@
+async (page) => {
+  await page.setViewportSize({width:844,height:390});
+  await page.getByRole('button',{name:'Para los grandes',exact:true}).click();
+  const hold=page.locator('#hold');let box=await hold.boundingBox();
+  await page.mouse.move(box.x+box.width/2,box.y+box.height/2);await page.mouse.down();await page.waitForTimeout(300);await page.mouse.up();
+  if(await page.locator('#challenge').isVisible())throw new Error('Gate accepted a brief press');
+  await page.mouse.down();await page.waitForTimeout(2950);await page.mouse.up();
+  const equation=await page.locator('#equation').textContent();const values=equation.match(/\d+/g).map(Number);
+  await page.locator('#answer').fill('1');await page.locator('#challenge button').click();
+  if(await page.locator('#settings-panel').isVisible())throw new Error('Gate accepted wrong answer');
+  await page.locator('#answer').fill(String(values[0]+values[1]));await page.locator('#challenge button').click();
+  await page.locator('#language').selectOption('en');
+  await page.locator('#motion').check();await page.locator('#subtitles').uncheck();
+  await page.locator('[data-volume="music"]').fill('0.35');
+  const settings=await page.evaluate(()=>window.__elenita.preferences());
+  if(settings.language!=='en'||!settings.reducedMotion||settings.subtitles||settings.volumes.music!==.35)throw new Error('Settings did not apply');
+  await page.screenshot({path:'output/playwright/parent-settings.png'});
+  await page.locator('#parents-close').click();
+  await page.reload();await page.waitForFunction(()=>window.__elenita?.state().ready);
+  const persisted=await page.evaluate(()=>window.__elenita.preferences());
+  if(JSON.stringify(settings)!==JSON.stringify(persisted))throw new Error('Settings did not persist');
+  await page.getByRole('button',{name:'Enter the forest',exact:true}).click();
+  await page.getByRole('button',{name:'The Letter Trail',exact:true}).click();await page.waitForTimeout(300);
+  const m=await page.evaluate(()=>window.__elenita.targets().find(t=>t.id==='letter_m'));await page.mouse.click(m.x,m.y);
+  await page.waitForTimeout(800);
+  if(await page.locator('#caption').evaluate(el=>el.classList.contains('visible')))throw new Error('Disabled subtitles still shown');
+  const errors=await page.evaluate(()=>window.__elenita.state());
+  if(errors.audio.context!=='running')throw new Error('English audio did not start');
+  await page.evaluate(()=>window.__settingsResults={gate:true,persistence:true,english:true,reducedMotion:true,subtitles:true});
+}

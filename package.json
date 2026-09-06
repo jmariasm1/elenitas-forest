@@ -1,0 +1,23 @@
+{
+  "name": "elenitas-forest",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc --noEmit && node tools/validate.mjs && vite build && node tools/finalize-build.mjs",
+    "preview": "vite preview --host 0.0.0.0",
+    "validate": "node tools/validate.mjs"
+  },
+  "dependencies": {
+    "three": "0.185.1"
+  },
+  "devDependencies": {
+    "@playwright/cli": "^0.1.19",
+    "@resvg/resvg-js": "^2.6.2",
+    "@types/three": "^0.185.0",
+    "prettier": "^3.9.6",
+    "typescript": "^5.9.3",
+    "vite": "8.2.2"
+  }
+}
