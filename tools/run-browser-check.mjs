@@ -10,7 +10,7 @@ try {
       resolve("node_modules/@playwright/cli/playwright-cli.js"),
       "-s=" + session,
       "run-code",
-      readFileSync(file, "utf8"),
+      readFileSync(file, "utf8").trim().replace(/;$/, ""),
     ],
     { stdio: "inherit" },
   );
