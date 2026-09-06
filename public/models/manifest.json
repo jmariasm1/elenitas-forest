@@ -1,0 +1,684 @@
+[
+  {
+    "id": "tree",
+    "triangles": 984,
+    "meshes": 1,
+    "animations": [],
+    "source": "blender/source/tree.blend",
+    "model": "models/tree.glb"
+  },
+  {
+    "id": "rabbit",
+    "triangles": 3504,
+    "meshes": 3,
+    "animations": [
+      "Idle"
+    ],
+    "source": "blender/source/rabbit.blend",
+    "model": "models/rabbit.glb"
+  },
+  {
+    "id": "fir",
+    "triangles": 192,
+    "meshes": 1,
+    "animations": [],
+    "source": "blender/source/fir.blend",
+    "model": "models/fir.glb"
+  },
+  {
+    "id": "flower",
+    "triangles": 748,
+    "meshes": 1,
+    "animations": [],
+    "source": "blender/source/flower.blend",
+    "model": "models/flower.glb"
+  },
+  {
+    "id": "rock",
+    "triangles": 120,
+    "meshes": 1,
+    "animations": [],
+    "source": "blender/source/rock.blend",
+    "model": "models/rock.glb"
+  },
+  {
+    "id": "bush",
+    "triangles": 504,
+    "meshes": 1,
+    "animations": [],
+    "source": "blender/source/bush.blend",
+    "model": "models/bush.glb"
+  },
+  {
+    "id": "grass",
+    "triangles": 192,
+    "meshes": 1,
+    "animations": [],
+    "source": "blender/source/grass.blend",
+    "model": "models/grass.glb"
+  },
+  {
+    "id": "mushroom",
+    "triangles": 412,
+    "meshes": 1,
+    "animations": [],
+    "source": "blender/source/mushroom.blend",
+    "model": "models/mushroom.glb"
+  },
+  {
+    "id": "log",
+    "triangles": 180,
+    "meshes": 3,
+    "animations": [],
+    "source": "blender/source/log.blend",
+    "model": "models/log.glb"
+  },
+  {
+    "id": "lily",
+    "triangles": 160,
+    "meshes": 1,
+    "animations": [],
+    "source": "blender/source/lily.blend",
+    "model": "models/lily.glb"
+  },
+  {
+    "id": "pond",
+    "triangles": 1024,
+    "meshes": 1,
+    "animations": [],
+    "source": "blender/source/pond.blend",
+    "model": "models/pond.glb"
+  },
+  {
+    "id": "cloud",
+    "triangles": 864,
+    "meshes": 1,
+    "animations": [],
+    "source": "blender/source/cloud.blend",
+    "model": "models/cloud.glb"
+  },
+  {
+    "id": "sun",
+    "triangles": 1944,
+    "meshes": 1,
+    "animations": [],
+    "source": "blender/source/sun.blend",
+    "model": "models/sun.glb"
+  },
+  {
+    "id": "moon",
+    "triangles": 888,
+    "meshes": 1,
+    "animations": [],
+    "source": "blender/source/moon.blend",
+    "model": "models/moon.glb"
+  },
+  {
+    "id": "star",
+    "triangles": 612,
+    "meshes": 2,
+    "animations": [],
+    "source": "blender/source/star.blend",
+    "model": "models/star.glb"
+  },
+  {
+    "id": "frog",
+    "triangles": 3612,
+    "meshes": 1,
+    "animations": [
+      "Idle"
+    ],
+    "source": "blender/source/frog.blend",
+    "model": "models/frog.glb"
+  },
+  {
+    "id": "duck",
+    "triangles": 2460,
+    "meshes": 1,
+    "animations": [
+      "Idle"
+    ],
+    "source": "blender/source/duck.blend",
+    "model": "models/duck.glb"
+  },
+  {
+    "id": "butterfly",
+    "triangles": 1048,
+    "meshes": 5,
+    "animations": [
+      "Idle"
+    ],
+    "source": "blender/source/butterfly.blend",
+    "model": "models/butterfly.glb"
+  },
+  {
+    "id": "owl",
+    "triangles": 2646,
+    "meshes": 1,
+    "animations": [
+      "Idle"
+    ],
+    "source": "blender/source/owl.blend",
+    "model": "models/owl.glb"
+  },
+  {
+    "id": "xylophone",
+    "triangles": 972,
+    "meshes": 7,
+    "animations": [],
+    "source": "blender/source/xylophone.blend",
+    "model": "models/xylophone.glb"
+  },
+  {
+    "id": "drum",
+    "triangles": 384,
+    "meshes": 1,
+    "animations": [],
+    "source": "blender/source/drum.blend",
+    "model": "models/drum.glb"
+  },
+  {
+    "id": "bell",
+    "triangles": 696,
+    "meshes": 1,
+    "animations": [],
+    "source": "blender/source/bell.blend",
+    "model": "models/bell.glb"
+  },
+  {
+    "id": "telescope",
+    "triangles": 320,
+    "meshes": 1,
+    "animations": [],
+    "source": "blender/source/telescope.blend",
+    "model": "models/telescope.glb"
+  },
+  {
+    "id": "apple",
+    "triangles": 724,
+    "meshes": 1,
+    "animations": [],
+    "source": "blender/source/apple.blend",
+    "model": "models/apple.glb"
+  },
+  {
+    "id": "leaf",
+    "triangles": 148,
+    "meshes": 1,
+    "animations": [],
+    "source": "blender/source/leaf.blend",
+    "model": "models/leaf.glb"
+  },
+  {
+    "id": "shape_circle",
+    "triangles": 716,
+    "meshes": 2,
+    "animations": [],
+    "source": "blender/source/shape_circle.blend",
+    "model": "models/shape_circle.glb"
+  },
+  {
+    "id": "shape_triangle",
+    "triangles": 416,
+    "meshes": 2,
+    "animations": [],
+    "source": "blender/source/shape_triangle.blend",
+    "model": "models/shape_triangle.glb"
+  },
+  {
+    "id": "shape_square",
+    "triangles": 444,
+    "meshes": 2,
+    "animations": [],
+    "source": "blender/source/shape_square.blend",
+    "model": "models/shape_square.glb"
+  },
+  {
+    "id": "shape_rectangle",
+    "triangles": 444,
+    "meshes": 2,
+    "animations": [],
+    "source": "blender/source/shape_rectangle.blend",
+    "model": "models/shape_rectangle.glb"
+  },
+  {
+    "id": "shape_oval",
+    "triangles": 716,
+    "meshes": 2,
+    "animations": [],
+    "source": "blender/source/shape_oval.blend",
+    "model": "models/shape_oval.glb"
+  },
+  {
+    "id": "shape_rhombus",
+    "triangles": 444,
+    "meshes": 2,
+    "animations": [],
+    "source": "blender/source/shape_rhombus.blend",
+    "model": "models/shape_rhombus.glb"
+  },
+  {
+    "id": "shape_semicircle",
+    "triangles": 616,
+    "meshes": 2,
+    "animations": [],
+    "source": "blender/source/shape_semicircle.blend",
+    "model": "models/shape_semicircle.glb"
+  },
+  {
+    "id": "shape_pentagon",
+    "triangles": 472,
+    "meshes": 2,
+    "animations": [],
+    "source": "blender/source/shape_pentagon.blend",
+    "model": "models/shape_pentagon.glb"
+  },
+  {
+    "id": "shape_hexagon",
+    "triangles": 500,
+    "meshes": 2,
+    "animations": [],
+    "source": "blender/source/shape_hexagon.blend",
+    "model": "models/shape_hexagon.glb"
+  },
+  {
+    "id": "shape_heptagon",
+    "triangles": 528,
+    "meshes": 2,
+    "animations": [],
+    "source": "blender/source/shape_heptagon.blend",
+    "model": "models/shape_heptagon.glb"
+  },
+  {
+    "id": "shape_octagon",
+    "triangles": 556,
+    "meshes": 2,
+    "animations": [],
+    "source": "blender/source/shape_octagon.blend",
+    "model": "models/shape_octagon.glb"
+  },
+  {
+    "id": "shape_trapezoid",
+    "triangles": 444,
+    "meshes": 2,
+    "animations": [],
+    "source": "blender/source/shape_trapezoid.blend",
+    "model": "models/shape_trapezoid.glb"
+  },
+  {
+    "id": "shape_star",
+    "triangles": 612,
+    "meshes": 2,
+    "animations": [],
+    "source": "blender/source/shape_star.blend",
+    "model": "models/shape_star.glb"
+  },
+  {
+    "id": "letter_a",
+    "triangles": 1104,
+    "meshes": 1,
+    "animations": [],
+    "source": "blender/source/letter_a.blend",
+    "model": "models/letter_a.glb"
+  },
+  {
+    "id": "letter_b",
+    "triangles": 2496,
+    "meshes": 1,
+    "animations": [],
+    "source": "blender/source/letter_b.blend",
+    "model": "models/letter_b.glb"
+  },
+  {
+    "id": "letter_c",
+    "triangles": 2940,
+    "meshes": 1,
+    "animations": [],
+    "source": "blender/source/letter_c.blend",
+    "model": "models/letter_c.glb"
+  },
+  {
+    "id": "letter_d",
+    "triangles": 1376,
+    "meshes": 1,
+    "animations": [],
+    "source": "blender/source/letter_d.blend",
+    "model": "models/letter_d.glb"
+  },
+  {
+    "id": "letter_e",
+    "triangles": 1612,
+    "meshes": 1,
+    "animations": [],
+    "source": "blender/source/letter_e.blend",
+    "model": "models/letter_e.glb"
+  },
+  {
+    "id": "letter_f",
+    "triangles": 1388,
+    "meshes": 1,
+    "animations": [],
+    "source": "blender/source/letter_f.blend",
+    "model": "models/letter_f.glb"
+  },
+  {
+    "id": "letter_g",
+    "triangles": 2940,
+    "meshes": 1,
+    "animations": [],
+    "source": "blender/source/letter_g.blend",
+    "model": "models/letter_g.glb"
+  },
+  {
+    "id": "letter_h",
+    "triangles": 1676,
+    "meshes": 1,
+    "animations": [],
+    "source": "blender/source/letter_h.blend",
+    "model": "models/letter_h.glb"
+  },
+  {
+    "id": "letter_i",
+    "triangles": 796,
+    "meshes": 1,
+    "animations": [],
+    "source": "blender/source/letter_i.blend",
+    "model": "models/letter_i.glb"
+  },
+  {
+    "id": "letter_j",
+    "triangles": 1884,
+    "meshes": 1,
+    "animations": [],
+    "source": "blender/source/letter_j.blend",
+    "model": "models/letter_j.glb"
+  },
+  {
+    "id": "letter_k",
+    "triangles": 1516,
+    "meshes": 1,
+    "animations": [],
+    "source": "blender/source/letter_k.blend",
+    "model": "models/letter_k.glb"
+  },
+  {
+    "id": "letter_l",
+    "triangles": 1020,
+    "meshes": 1,
+    "animations": [],
+    "source": "blender/source/letter_l.blend",
+    "model": "models/letter_l.glb"
+  },
+  {
+    "id": "letter_m",
+    "triangles": 2066,
+    "meshes": 1,
+    "animations": [],
+    "source": "blender/source/letter_m.blend",
+    "model": "models/letter_m.glb"
+  },
+  {
+    "id": "letter_n",
+    "triangles": 1500,
+    "meshes": 1,
+    "animations": [],
+    "source": "blender/source/letter_n.blend",
+    "model": "models/letter_n.glb"
+  },
+  {
+    "id": "letter_ñ",
+    "triangles": 3096,
+    "meshes": 1,
+    "animations": [],
+    "source": "blender/source/letter_ñ.blend",
+    "model": "models/letter_ñ.glb"
+  },
+  {
+    "id": "letter_o",
+    "triangles": 2048,
+    "meshes": 1,
+    "animations": [],
+    "source": "blender/source/letter_o.blend",
+    "model": "models/letter_o.glb"
+  },
+  {
+    "id": "letter_p",
+    "triangles": 1584,
+    "meshes": 1,
+    "animations": [],
+    "source": "blender/source/letter_p.blend",
+    "model": "models/letter_p.glb"
+  },
+  {
+    "id": "letter_q",
+    "triangles": 2400,
+    "meshes": 1,
+    "animations": [],
+    "source": "blender/source/letter_q.blend",
+    "model": "models/letter_q.glb"
+  },
+  {
+    "id": "letter_r",
+    "triangles": 2030,
+    "meshes": 1,
+    "animations": [],
+    "source": "blender/source/letter_r.blend",
+    "model": "models/letter_r.glb"
+  },
+  {
+    "id": "letter_s",
+    "triangles": 3452,
+    "meshes": 1,
+    "animations": [],
+    "source": "blender/source/letter_s.blend",
+    "model": "models/letter_s.glb"
+  },
+  {
+    "id": "letter_t",
+    "triangles": 1228,
+    "meshes": 1,
+    "animations": [],
+    "source": "blender/source/letter_t.blend",
+    "model": "models/letter_t.glb"
+  },
+  {
+    "id": "letter_u",
+    "triangles": 1724,
+    "meshes": 1,
+    "animations": [],
+    "source": "blender/source/letter_u.blend",
+    "model": "models/letter_u.glb"
+  },
+  {
+    "id": "letter_v",
+    "triangles": 956,
+    "meshes": 1,
+    "animations": [],
+    "source": "blender/source/letter_v.blend",
+    "model": "models/letter_v.glb"
+  },
+  {
+    "id": "letter_w",
+    "triangles": 1980,
+    "meshes": 1,
+    "animations": [],
+    "source": "blender/source/letter_w.blend",
+    "model": "models/letter_w.glb"
+  },
+  {
+    "id": "letter_x",
+    "triangles": 1348,
+    "meshes": 1,
+    "animations": [],
+    "source": "blender/source/letter_x.blend",
+    "model": "models/letter_x.glb"
+  },
+  {
+    "id": "letter_y",
+    "triangles": 1116,
+    "meshes": 1,
+    "animations": [],
+    "source": "blender/source/letter_y.blend",
+    "model": "models/letter_y.glb"
+  },
+  {
+    "id": "letter_z",
+    "triangles": 1372,
+    "meshes": 1,
+    "animations": [],
+    "source": "blender/source/letter_z.blend",
+    "model": "models/letter_z.glb"
+  },
+  {
+    "id": "number_0",
+    "triangles": 2192,
+    "meshes": 1,
+    "animations": [],
+    "source": "blender/source/number_0.blend",
+    "model": "models/number_0.glb"
+  },
+  {
+    "id": "number_1",
+    "triangles": 1132,
+    "meshes": 1,
+    "animations": [],
+    "source": "blender/source/number_1.blend",
+    "model": "models/number_1.glb"
+  },
+  {
+    "id": "number_2",
+    "triangles": 2732,
+    "meshes": 1,
+    "animations": [],
+    "source": "blender/source/number_2.blend",
+    "model": "models/number_2.glb"
+  },
+  {
+    "id": "number_3",
+    "triangles": 3516,
+    "meshes": 1,
+    "animations": [],
+    "source": "blender/source/number_3.blend",
+    "model": "models/number_3.glb"
+  },
+  {
+    "id": "number_4",
+    "triangles": 1452,
+    "meshes": 1,
+    "animations": [],
+    "source": "blender/source/number_4.blend",
+    "model": "models/number_4.glb"
+  },
+  {
+    "id": "number_5",
+    "triangles": 3212,
+    "meshes": 1,
+    "animations": [],
+    "source": "blender/source/number_5.blend",
+    "model": "models/number_5.glb"
+  },
+  {
+    "id": "number_6",
+    "triangles": 2586,
+    "meshes": 1,
+    "animations": [],
+    "source": "blender/source/number_6.blend",
+    "model": "models/number_6.glb"
+  },
+  {
+    "id": "number_7",
+    "triangles": 1756,
+    "meshes": 1,
+    "animations": [],
+    "source": "blender/source/number_7.blend",
+    "model": "models/number_7.glb"
+  },
+  {
+    "id": "number_8",
+    "triangles": 3588,
+    "meshes": 1,
+    "animations": [],
+    "source": "blender/source/number_8.blend",
+    "model": "models/number_8.glb"
+  },
+  {
+    "id": "number_9",
+    "triangles": 2586,
+    "meshes": 1,
+    "animations": [],
+    "source": "blender/source/number_9.blend",
+    "model": "models/number_9.glb"
+  },
+  {
+    "id": "number_10",
+    "triangles": 3324,
+    "meshes": 1,
+    "animations": [],
+    "source": "blender/source/number_10.blend",
+    "model": "models/number_10.glb"
+  },
+  {
+    "id": "planet_mercury",
+    "triangles": 960,
+    "meshes": 1,
+    "animations": [],
+    "source": "blender/source/planet_mercury.blend",
+    "model": "models/planet_mercury.glb"
+  },
+  {
+    "id": "planet_venus",
+    "triangles": 960,
+    "meshes": 1,
+    "animations": [],
+    "source": "blender/source/planet_venus.blend",
+    "model": "models/planet_venus.glb"
+  },
+  {
+    "id": "planet_earth",
+    "triangles": 1932,
+    "meshes": 1,
+    "animations": [],
+    "source": "blender/source/planet_earth.blend",
+    "model": "models/planet_earth.glb"
+  },
+  {
+    "id": "planet_mars",
+    "triangles": 960,
+    "meshes": 1,
+    "animations": [],
+    "source": "blender/source/planet_mars.blend",
+    "model": "models/planet_mars.glb"
+  },
+  {
+    "id": "planet_jupiter",
+    "triangles": 1184,
+    "meshes": 1,
+    "animations": [],
+    "source": "blender/source/planet_jupiter.blend",
+    "model": "models/planet_jupiter.glb"
+  },
+  {
+    "id": "planet_saturn",
+    "triangles": 1728,
+    "meshes": 2,
+    "animations": [],
+    "source": "blender/source/planet_saturn.blend",
+    "model": "models/planet_saturn.glb"
+  },
+  {
+    "id": "planet_uranus",
+    "triangles": 960,
+    "meshes": 1,
+    "animations": [],
+    "source": "blender/source/planet_uranus.blend",
+    "model": "models/planet_uranus.glb"
+  },
+  {
+    "id": "planet_neptune",
+    "triangles": 960,
+    "meshes": 1,
+    "animations": [],
+    "source": "blender/source/planet_neptune.blend",
+    "model": "models/planet_neptune.glb"
+  }
+]

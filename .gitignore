@@ -1,0 +1,14 @@
+node_modules/
+.tools/
+.env*
+!.env.example
+build/
+output/
+blender/previews/
+*.blend1
+__pycache__/
+*.pyc
+.DS_Store
+tools/local.config.json
+.playwright-cli/
+*.log
